@@ -1,7 +1,9 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 const user_id = "john_doe_17091999";
 const email = "john@xyz.com";
